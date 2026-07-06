@@ -1,173 +1,130 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <title>Alessio Bottini</title>
-  <style>
-    body {
-      background: #f7f3e8;
-      color: #000;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 17px;
-      line-height: 1.45;
-      margin: 0;
-      padding: 0;
-    }
-
-    .page {
-      max-width: 820px;
-      margin: 32px auto;
-      padding: 24px 32px;
-      background: #fffdf5;
-      border: 1px solid #999;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 0;
-      text-align: center;
-      font-weight: normal;
-    }
-
-    .subtitle {
-      text-align: center;
-      margin-top: 6px;
-      font-size: 15px;
-    }
-
-    h2 {
-      font-size: 21px;
-      margin-top: 28px;
-      border-bottom: 1px solid #999;
-      font-weight: normal;
-    }
-
-    a {
-      color: #0000cc;
-      text-decoration: underline;
-    }
-
-    a:visited {
-      color: #551a8b;
-    }
-
-    ul {
-      padding-left: 28px;
-    }
-
-    li {
-      margin-bottom: 12px;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid #999;
-      margin: 24px 0;
-    }
-
-    .contact {
-      margin-top: 18px;
-      font-size: 15px;
-    }
-
-    .footer {
-      margin-top: 32px;
-      font-size: 13px;
-      text-align: center;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Bottini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        section {
+            padding-top: 0.5rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #e5e7eb; /* Light gray border between sections */
+        }
+        h2 {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #111827; /* Dark gray for headings */
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+       .max-w-3xl a {
+                color: #2563eb; /* A nice blue for links */
+                text-decoration: none;
+                transition: color 0.2s;
+        }
+        .max-w-3xl a:hover {
+                    color: #1d4ed8; /* Darker blue on hover */
+        }
+    </style>
 </head>
+<body class="">
 
-<body>
-  <div class="page">
-    <h1>Alessio Bottini</h1>
+    <div class="max-w-3xl mx-auto px-6 py-12">
 
-    <div class="subtitle">
-      Mathematisches Institut, Universität Bonn
+       <header class="mb-12"> <div>
+        <h1 class="text-2xl font-bold text-gray-900">Alessio Bottini</h1>
+        
+        <ul class="mt-2 space-y-1">
+            <li> Mathematisches Institut, Universität Bonn, <br> 
+                 Endenicher Allee 60, <br>
+                 53115 Bonn, Germany <br>
+                 Room 3.002</li>
+            <li><strong>Email:</strong> <a href="mailto:bottini@math.uni-bonn.de">bottini@math.uni-bonn.de</a></li>
+            <li><a href="https://scholar.google.com/citations?user=_xDQK58AAAAJ&hl=en&oi=sra" target="_blank"><strong>Google Scholar</strong></a></li>            
+        </ul>
+    </div>
+</header>
+
+        <main>
+            <section id="home">
+                <p>
+                  I am a postdoc at the University of Bonn, working in the group of Daniel Huybrechts. I received my Ph.D. in November 2023 from Université Paris-Saclay and Tor Vergata University under the supervision of Emanuele Macrì and Antonio Rapagnetta. Here is my <a href="CV_Alessio_Bottini.pdf" download>CV</a>.</p>
+                <p>
+                  I am broadly interested in the applications of homological algebra to algebraic geometry. Currently, I study sheaves on hyper-Kähler manifolds and their moduli spaces.
+                </p>
+                
+                  
+            </section>
+
+            
+            <section id="publications">
+                 <h2 class="mb-4"><strong>Publications and preprints:</strong></h2>
+                
+                <ul class="space-y-4">
+                     <li class="publication-item">
+                        Semi-rigid stable sheaves: a criterion and examples (with Riccardo Carini).<br>
+                        Preprint (2026). <a href="https://arxiv.org/abs/2603.09477" target="_blank">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        The period-index problem for hyperkähler varieties: Lower and upper bounds (with Daniel Huybrechts).<br>
+                        Preprint (2025). <a href="https://arxiv.org/abs/2512.15131" target="_blank">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        Derived categories of Fano varieties of lines (with Daniel Huybrechts).<br>
+                        Preprint (2025). <a href="https://arxiv.org/abs/2501.03534" target="_blank">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        O'Grady's tenfolds from stable bundles on hyper-Kähler fourfolds.<br>
+                        Preprint (2024). <a href="https://arxiv.org/abs/2411.18528" target="_blank">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        Towards a modular construction of OG10.<br>
+                        <em>Compositio Mathematica</em>, 160 (2024). <a href="https://arxiv.org/abs/2211.09033" target="_blank">[arXiv]</a> <a href="https://www.cambridge.org/core/journals/compositio-mathematica/article/abs/towards-a-modular-construction-of-og10/9700D7679D56BDD032CA298D6F4586A1" target="_blank">[Journal]</a>
+                    </li>
+                    <li class="publication-item">
+                        Stable sheaves on K3 surfaces via wall-crossing.<br>
+                        <em>Kyoto Journal of Mathematics</em>, 64(2) (2024). <a href="https://arxiv.org/abs/2103.09661" target="_blank">[arXiv]</a> <a href="https://projecteuclid.org/journals/kyoto-journal-of-mathematics/volume-64/issue-2/Stable-sheaves-on-K3-surfaces-via-wall-crossing/10.1215/21562261-2023-0020.short" target="_blank">[Journal]</a>
+                    </li>
+                </ul>
+                
+                <div class="h-6"></div>
+
+                 <h2 class="mb-4"><strong>Expository writing:</strong></h2>
+                
+                 <ul class="space-y-4">
+                 <li class="publication-item">
+                        Hyper-Kähler varieties: Lagrangian fibrations, atomic sheaves, and categories (with Emanuele Macrì and Paolo Stellari)<br>
+                        Survey written in the occasion of the 2025 Summer Research Institute in Algebraic Geometry.<br>
+                        Preprint (2026). <a href="https://arxiv.org/abs/2603.23033" target="_blank">[arXiv]</a>
+                </li>
+                 <li class="publication-item">
+                       The Looijenga–Lunts–Verbitsky Algebra and Verbitsky's Theorem<br>
+                        <em>Milan Journal of Mathematics</em>, 90 (2022) <a href="https://link.springer.com/article/10.1007/s00032-022-00364-z" target="_blank">[Journal]</a>
+                </li>
+                <li class="publication-item">
+                        A modular construction of OG10<br>
+                        <em>Oberwolfach reports</em>, (2024) <a href="https://publications.mfo.de/bitstream/handle/mfo/4246/OWR_2024_32.pdf?sequence=1&isAllowed=y">[Link]</a>
+                </li>
+                <li class="publication-item">
+                        Stable sheaves on hyper-Kähler manifolds<br>
+                        PhD Thesis (2023). <a href="https://theses.hal.science/tel-04496190/file/127742_BOTTINI_2023_archivage.pdf" target="_blank">[Link]</a>
+                </li>
+                 </ul>
+            </section>
+
+        </main>
+
     </div>
 
-    <hr>
-
-    <div class="contact">
-      <p>
-        Endenicher Allee 60<br>
-        53115 Bonn, Germany<br>
-        Room 3.002
-      </p>
-
-      <p>
-        Email: <a href="mailto:bottini@math.uni-bonn.de">bottini@math.uni-bonn.de</a><br>
-        <a href="https://scholar.google.com/">Google Scholar</a> |
-        <a href="CV_Alessio_Bottini.pdf">CV</a>
-      </p>
-    </div>
-
-    <p>
-      I am a postdoc at the University of Bonn, working in the group of
-      Daniel Huybrechts. I received my Ph.D. in November 2023 from Université
-      Paris-Saclay and Tor Vergata University under the supervision of Emanuele
-      Macrì and Antonio Rapagnetta.
-    </p>
-
-    <p>
-      I am broadly interested in the applications of homological algebra to
-      algebraic geometry. Currently, I study sheaves on hyper-Kähler manifolds
-      and their moduli spaces.
-    </p>
-
-    <h2>Publications and preprints</h2>
-
-    <ul>
-      <li>
-        Semi-rigid stable sheaves: a criterion and examples
-        <br>
-        with Riccardo Carini. Preprint, 2026.
-        <a href="#">[arXiv]</a>
-      </li>
-
-      <li>
-        The period-index problem for hyperkähler varieties: lower and upper bounds
-        <br>
-        with Daniel Huybrechts. Preprint, 2025.
-        <a href="#">[arXiv]</a>
-      </li>
-
-      <li>
-        Derived categories of Fano varieties of lines
-        <br>
-        with Daniel Huybrechts. Preprint, 2025.
-        <a href="#">[arXiv]</a>
-      </li>
-
-      <li>
-        O'Grady's tenfolds from stable bundles on hyper-Kähler fourfolds
-        <br>
-        Preprint, 2024.
-        <a href="#">[arXiv]</a>
-      </li>
-    </ul>
-
-    <h2>Expository writing</h2>
-
-    <ul>
-      <li>
-        Hyper-Kähler varieties: Lagrangian fibrations, atomic sheaves, and categories
-        <br>
-        with Emanuele Macrì and Paolo Stellari. Preprint, 2026.
-        <a href="#">[arXiv]</a>
-      </li>
-
-      <li>
-        The Looijenga–Lunts–Verbitsky Algebra and Verbitsky's Theorem
-        <br>
-        Milan Journal of Mathematics, 90, 2022.
-      </li>
-    </ul>
-
-    <div class="footer">
-      Last updated: July 2026
-    </div>
-  </div>
 </body>
 </html>
