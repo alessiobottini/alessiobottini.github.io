@@ -27,40 +27,71 @@
         li {
             margin-bottom: 1rem;
         }
-       .max-w-3xl a {
+        .page-container {
+            max-width: 56rem;
+            margin-left: max(0px, calc((100% - 64rem) / 2));
+            margin-right: auto;
+        }
+        .profile-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 180px;
+            align-items: start;
+            gap: 2rem;
+        }
+        .profile-photo {
+            width: 180px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgb(17 24 39 / 10%);
+        }
+        @media (max-width: 600px) {
+            .profile-header {
+                grid-template-columns: minmax(0, 1fr) 96px;
+                gap: 1rem;
+            }
+            .profile-photo {
+                width: 96px;
+            }
+            .profile-header a {
+                overflow-wrap: anywhere;
+            }
+        }
+       .page-container a {
                 color: #2563eb; /* A nice blue for links */
                 text-decoration: none;
                 transition: color 0.2s;
         }
-        .max-w-3xl a:hover {
+        .page-container a:hover {
                     color: #1d4ed8; /* Darker blue on hover */
         }
     </style>
 </head>
 <body class="">
 
-    <div class="max-w-3xl mx-auto px-6 py-12">
+    <div class="page-container px-6 py-12">
 
-       <header class="mb-12"> <div>
+       <header class="profile-header mb-12"> <div>
         <h1 class="text-2xl font-bold text-gray-900">Alessio Bottini</h1>
         
         <ul class="mt-2 space-y-1">
-            <li> Mathematisches Institut, Universität Bonn, <br> 
-                 Endenicher Allee 60, <br>
-                 53115 Bonn, Germany <br>
-                 Room 3.002</li>
-            <li><strong>Email:</strong> <a href="mailto:bottini@math.uni-bonn.de">bottini@math.uni-bonn.de</a></li>
+            <li>Office 639, Huxley Building<br>
+                 Department of Mathematics<br>
+                 Imperial College London<br>
+                 180 Queen's Gate<br>
+                 London SW7 2AZ, United Kingdom</li>
+            <li><strong>Email:</strong> <a href="mailto:abottini@ic.ac.uk">abottini@ic.ac.uk</a></li>
             <li><a href="https://scholar.google.com/citations?user=_xDQK58AAAAJ&hl=en&oi=sra" target="_blank"><strong>Google Scholar</strong></a></li>            
         </ul>
     </div>
+    <img class="profile-photo" src="picture.jpg" alt="Alessio Bottini" width="941" height="1103">
 </header>
 
         <main>
             <section id="home">
                 <p>
-                  I am a postdoc at the University of Bonn, working in the group of Daniel Huybrechts. I received my Ph.D. in November 2023 from Université Paris-Saclay and Tor Vergata University under the supervision of Emanuele Macrì and Antonio Rapagnetta. Here is my <a href="CV_Alessio_Bottini.pdf" download>CV</a>.</p>
+                  I am a Chapman Fellow in the Department of Mathematics at Imperial College London. Previously, I was a postdoctoral researcher in Bonn, working with Daniel Huybrechts. I received my Ph.D. in November 2023 from Université Paris-Saclay and Tor Vergata University under the supervision of Emanuele Macrì and Antonio Rapagnetta. Here is my <a href="CV_Alessio_Bottini.pdf" download>CV</a>.</p>
                 <p>
-                  I am broadly interested in the applications of homological algebra to algebraic geometry. Currently, I study sheaves on hyper-Kähler manifolds and their moduli spaces.
+                  I work in algebraic geometry, primarily on hyper-Kähler varieties and related topics. In particular, I study sheaves on hyper-Kähler varieties and their moduli spaces, with the aim of developing a higher-dimensional analogue of the theory for K3 surfaces. More recently, I have also become interested in Brauer groups and the period–index conjecture.
                 </p>
                 
                   
@@ -71,6 +102,10 @@
                  <h2 class="mb-4"><strong>Publications and preprints:</strong></h2>
                 
                 <ul class="space-y-4">
+                    <li class="publication-item">
+                        The tangent bundle of a generalized Kummer fourfold is obstructed.<br>
+                        Preprint (2026). <a href="https://arxiv.org/abs/2608.24860" target="_blank">[arXiv]</a>
+                    </li>
                      <li class="publication-item">
                         Semi-rigid stable sheaves: a criterion and examples (with Riccardo Carini).<br>
                         Preprint (2026). <a href="https://arxiv.org/abs/2603.09477" target="_blank">[arXiv]</a>
